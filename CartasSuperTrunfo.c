@@ -28,7 +28,7 @@ int main() {
     printf("Informe o PIB da cidade: ");
     scanf(" %f", &pib);
 
-    printf("Digite a quantidae de pontos turísticos da cidade: ");
+    printf("Digite a quantidade de pontos turísticos da cidade: ");
     scanf(" %d", &pontosturisticos);
 
     printf("Estado:  %s\n", Estado);
@@ -57,7 +57,7 @@ int main() {
     printf("Informe o PIB da cidade: ");
     scanf(" %f", &pib);
 
-    printf("Digite a quantidae de pontos turísticos da cidade: ");
+    printf("Digite a quantidade de pontos turísticos da cidade: ");
     scanf(" %d", &pontosturisticos);
 
     printf("Estado: %s\n", Estado);
