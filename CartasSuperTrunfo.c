@@ -9,64 +9,62 @@ int main() {
     float area;
     float pib;
     int pontosturisticos;
+    int resultado;
 
     printf("Digite o Estado da primeira carta: ");
     scanf("%s", Estado);
-
     printf("Digite o código da carta: ");
     scanf("%s", Codigocarta);
-
     printf("Digite o nome da cidade: ");
     scanf("%s", nomedacidade);
-
     printf("Informe a população da cidade: ");
     scanf("%d", &populacao);
-
     printf("Digite a área da cidade em km²: ");
     scanf(" %f", &area);
-
     printf("Informe o PIB da cidade: ");
     scanf(" %f", &pib);
-
     printf("Digite a quantidade de pontos turísticos da cidade: ");
     scanf(" %d", &pontosturisticos);
 
-    printf("Estado:  %s\n", Estado);
-    printf("Carta 01:  %s\n", Codigocarta);
-    printf("Nome da cidade: %s\n", nomedacidade);
-    printf("População: %d\n", populacao);
-    printf("Área em km²: %f\n", area);
-    printf("PIB: %f\n", pib);
-    printf("Pontos Turísticos: %d\n", pontosturisticos);
+    //printf("Estado:  %s\n", Estado);
+    //printf("Carta 01:  %s\n", Codigocarta);
+    //printf("Nome da cidade: %s\n", nomedacidade);
+    //printf("População: %d\n", populacao);
+    //printf("Área em km²: %f\n", area);
+    //printf("PIB: %f\n", pib);
+    //printf("Pontos Turísticos: %d\n", pontosturisticos);
 
-    printf("Digite o Estado da segunda carta: ");
-    scanf("%s", Estado);
+    //Cálculo da densidade populacional carta 01
 
-    printf("Digite o código da carta: ");
-    scanf("%s", Codigocarta);
+    resultado = populacao / area;
 
-    printf("Digite o nome da cidade: ");
-    scanf("%s", nomedacidade);
+    printf("Densidade populacional Carta 01: ");
+    scanf("%d", &resultado);
 
-    printf("Informe a população da cidade: ");
-    scanf("%d", &populacao);
+    //printf("Digite o Estado da segunda carta: ");
+    //scanf("%s", Estado);
+    //printf("Digite o código da carta: ");
+    //scanf("%s", Codigocarta);
+    //printf("Digite o nome da cidade: ");
+    //scanf("%s", nomedacidade);
+    //printf("Informe a população da cidade: ");
+    //scanf("%d", &populacao);
+    //printf("Digite a área da cidade em km²: ");
+    //scanf(" %f", &area);
+    //printf("Informe o PIB da cidade: ");
+    //scanf(" %f", &pib);
+    //printf("Digite a quantidade de pontos turísticos da cidade: ");
+    //scanf(" %d", &pontosturisticos);
 
-    printf("Digite a área da cidade em km²: ");
-    scanf(" %f", &area);
+    //printf("Estado: %s\n", Estado);
+    //printf("Carta 02: %s\n", Codigocarta);
+    //printf("Nome da cidade: %s\n", nomedacidade);
+    //printf("População: %d\n", populacao);
+    //printf("Área em km²: %f\n", area);
+    //printf("PIB: %f\n", pib);
+    //printf("Pontos Turísticos: %d\n", pontosturisticos);
 
-    printf("Informe o PIB da cidade: ");
-    scanf(" %f", &pib);
 
-    printf("Digite a quantidade de pontos turísticos da cidade: ");
-    scanf(" %d", &pontosturisticos);
-
-    printf("Estado: %s\n", Estado);
-    printf("Carta 02: %s\n", Codigocarta);
-    printf("Nome da cidade: %s\n", nomedacidade);
-    printf("População: %d\n", populacao);
-    printf("Área em km²: %f\n", area);
-    printf("PIB: %f\n", pib);
-    printf("Pontos Turísticos: %d\n", pontosturisticos);
 
        return 0;
 }
