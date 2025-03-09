@@ -96,9 +96,11 @@ int main() {
     // Carta vencedora: comparação do atributo e exibição do resultado
 
     if(populacao1> populacao2){
+        printf("Resultado:\n");
         printf("A Carta 01 venceu! %s %d \n", nomedacidade1 , populacao1);
-        printf("A Carta 02 perdeu! %s %d \n", nomedacidade2 , populacao2);        
+        printf("A Carta 02 perdeu! %s %d \n", nomedacidade2 , populacao2);       
     }else{
+        printf("Resultado:\n");
         printf("A Carta 02 venceu! %s %d \n", nomedacidade2 , populacao2);
         printf("A Carta 01 perdeu! %s %d \n", nomedacidade1 , populacao1); 
     }
