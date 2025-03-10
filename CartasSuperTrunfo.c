@@ -36,11 +36,10 @@ int main() {
 
     //Cálculo da densidade populacional carta 01
 
-    //resultado1 = (float)populacao1 / area1;
+    resultado1 = (float)populacao1 / area1;
 
-    //printf("Densidade populacional Carta 01: ");
-    //scanf("%f/%f = %f", &populacao1, &area1, &resultado1);
-
+    printf("Densidade populacional Carta 01:%d/ %.2f = %.2f",populacao1, area1, resultado1);
+   
     //Cálculo do PIB per capita carta 01
 
     //resultado2 = pib1 / populacao1;
@@ -48,7 +47,7 @@ int main() {
     //printf("O PIB per capita Carta 01: %f / %d = %d", &pib1, &populacao1, &resultado2);
     //scanf("%d / %f", &resultado2);
 
-    printf("Digite o Estado da segunda carta: ");
+    printf("\nDigite o Estado da segunda carta: ");
     scanf("%s", Estado2);
     printf("Digite o código da carta: ");
     scanf("%s", Codigocarta2);
@@ -75,9 +74,8 @@ int main() {
 
     //resultado1 = populacao2 / area2;
 
-    //printf("Densidade populacional Carta 02: %d / %f = %d", &populacao2, &area2, &resultado1);
-    //scanf("%d / %f", &resultado1);
-
+    printf("Densidade populacional Carta 02:%d / %.2f = %.2f", populacao2, area2, resultado1);
+    
     //Cálculo do PIB per capita carta 02
 
     //resultado2 = pib2 / populacao2;
@@ -88,9 +86,9 @@ int main() {
     // Comparando um atributo: população
 
     if(populacao1> populacao2){
-        printf("Carta 01 tem a maior população!\n");
+        printf("\nCarta 01 tem a maior população!\n");
     }else{
-        printf("Carta 02 tem a maior população!\n");
+        printf("\nCarta 02 tem a maior população!\n");
     }
 
     // Carta vencedora: comparação do atributo e exibição do resultado
