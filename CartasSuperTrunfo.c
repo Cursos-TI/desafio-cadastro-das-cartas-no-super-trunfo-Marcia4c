@@ -12,7 +12,7 @@ int main() {
     float pib1, pib2;
     int pontosturisticos1, pontosturisticos2;
     float resultadoden1, resultadoden2, resultadopib1, resultadopib2;
-    int escolhaAtributo;
+    int escolhaAtributo1, escolhaAtributo2;
     
     printf("Digite o Estado da primeira carta: ");
     scanf("%s", Estado1);
@@ -110,15 +110,15 @@ int main() {
     // desafio super trunfo nivel aventureiro: menu interativo e comparaçãos dos atributos
     // Obs.: Estou comentando as etapas executadas nos desafios anteriores para não deletar o código.
 
-    printf("###Super Trunfo\n");
-    printf("Escolha uma opção de atributo para comparação:\n");
-    printf("1. Estado\n");
-    printf("2. População\n");
-    printf("3. Área\n");
-    printf("4. PIB\n");
-    printf("5. Pontos turísticos\n");
-    printf("6. Densidade demográfica\n");
-    printf("Escolha uma opção: \n");
+    //printf("###Super Trunfo\n");
+    //printf("Escolha uma opção de atributo para comparação:\n");
+    //printf("1. Estado\n");
+    //printf("2. População\n");
+    //printf("3. Área\n");
+    //printf("4. PIB\n");
+    //printf("5. Pontos turísticos\n");
+    //printf("6. Densidade demográfica\n");
+    /*printf("Escolha uma opção: \n");
     scanf("%d", &escolhaAtributo);
 
     switch (escolhaAtributo) {
@@ -200,6 +200,130 @@ int main() {
           printf("Opção inválida. Tente novamente.\n");
         break;
       }
-     
+     */
+
+    // desafio super trunfo nivel mestre: Implementando Comparações Avançadas com Atributos Múltiplos em C
+    // Obs.: Estou comentando as etapas executadas nos desafios anteriores para não deletar o código.
+    
+    printf("###Super Trunfo\n");
+    printf("Escolha a primeira opção de atributo para comparação:\n");
+    printf("1. Estado\n");
+    printf("2. População\n");
+    printf("3. Área\n");
+    printf("4. PIB\n");
+    printf("5. Pontos turísticos\n");
+    printf("6. Densidade demográfica\n");
+    printf("Escolha uma opção: \n");
+    scanf("%d", &escolhaAtributo1);
+    
+
+    switch (escolhaAtributo1) {
+      case 1:
+        printf("Atributo escolhido: Estado\n");
+        printf("Escolha a segunda opção de atributo para comparação:\n");
+        scanf("%d", &escolhaAtributo2);
+        if(escolhaAtributo2 == escolhaAtributo1){
+        printf("Atributo já escolhido, selecione outro para comparação!"); 
+        printf("2. População\n");
+        printf("3. Área\n");
+        printf("4. PIB\n");
+        printf("5. Pontos turísticos\n");
+        printf("6. Densidade demográfica\n");
+        printf("Escolha uma opção: \n");
+        scanf("%d", &escolhaAtributo2);
+        }else{
+        printf("Atributo escolhido: %d", escolhaAtributo2);    
+        }   
+      break;
+      case 2:
+        printf("Atributo escolhido: População\n");
+        printf("Escolha a segunda opção de atributo para comparação:\n");
+        scanf("%d", &escolhaAtributo2);
+        if(escolhaAtributo2 == escolhaAtributo1){
+        printf("Atributo já escolhido, selecione outro para comparação!"); 
+        printf("1. Estado\n");
+        printf("3. Área\n");
+        printf("4. PIB\n");
+        printf("5. Pontos turísticos\n");
+        printf("6. Densidade demográfica\n");
+        printf("Escolha uma opção: \n");
+        scanf("%d", &escolhaAtributo2);
+        }else{
+        printf("Atributo escolhido: %d", escolhaAtributo2);    
+        }
+      break;
+      case 3:
+      printf("Atributo escolhido: Área\n");
+      printf("Escolha a segunda opção de atributo para comparação:\n");
+      scanf("%d", &escolhaAtributo2);
+      if(escolhaAtributo2 == escolhaAtributo1){
+      printf("Atributo já escolhido, selecione outro para comparação!"); 
+      printf("1. Estado\n");
+      printf("2. População\n");
+      printf("4. PIB\n");
+      printf("5. Pontos turísticos\n");
+      printf("6. Densidade demográfica\n");
+      printf("Escolha uma opção: \n");
+      scanf("%d", &escolhaAtributo2);
+      }else{
+      printf("Atributo escolhido: %d", escolhaAtributo2);    
+      }
+      break;
+      case 4:
+      printf("Atributo escolhido: PIB\n");
+      printf("Escolha a segunda opção de atributo para comparação:\n");
+      scanf("%d", &escolhaAtributo2);
+      if(escolhaAtributo2 == escolhaAtributo1){
+      printf("Atributo já escolhido, selecione outro para comparação!"); 
+      printf("1. Estado\n");
+      printf("2. População\n");
+      printf("3. Área\n");
+      printf("5. Pontos turísticos\n");
+      printf("6. Densidade demográfica\n");
+      printf("Escolha uma opção: \n");
+      scanf("%d", &escolhaAtributo2);
+      }else{
+      printf("Atributo escolhido: %d", escolhaAtributo2);    
+      }
+      break;
+      case 5:
+      printf("Atributo escolhido: Pontos Turisticos\n");
+      printf("Escolha a segunda opção de atributo para comparação:\n");
+      scanf("%d", &escolhaAtributo2);
+      if(escolhaAtributo2 == escolhaAtributo1){
+      printf("Atributo já escolhido, selecione outro para comparação!");
+      printf("1. Estado\n"); 
+      printf("2. População\n");
+      printf("3. Área\n");
+      printf("4. PIB\n");
+      printf("6. Densidade demográfica\n");
+      printf("Escolha uma opção: \n");
+      scanf("%d", &escolhaAtributo2);
+      }else{
+      printf("Atributo escolhido: %d", escolhaAtributo2);    
+      }
+      break;
+      case 6:
+      printf("Atributo escolhido: Densidade demográfica\n");
+      printf("Escolha a segunda opção de atributo para comparação:\n");
+      scanf("%d", &escolhaAtributo2);
+      if(escolhaAtributo2 == escolhaAtributo1){
+      printf("Atributo já escolhido, selecione outro para comparação!");
+      printf("1. Estado\n"); 
+      printf("2. População\n");
+      printf("3. Área\n");
+      printf("4. PIB\n");
+      printf("5. Pontos turísticos\n");
+      printf("Escolha uma opção: \n");
+      scanf("%d", &escolhaAtributo2);
+      }else{
+      printf("Atributo escolhido: %d", escolhaAtributo2);    
+      }
+      break;
+      default:
+        printf("Opção inválida. Tente novamente.\n");
+      break;
+    }
+
        return 0;
 }
